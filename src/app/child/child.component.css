@@ -1,0 +1,33 @@
+/* styles.css or your style file */
+h1 {
+    margin-left: 40%;
+}
+
+.note {
+    background-color: rgb(95, 52, 59); 
+    color: rgb(246, 248, 246);
+    font-size: 20px; /* Set the default font size */
+    font-weight: 100;
+    margin-left: 20%;
+}
+
+button {
+    margin: 30px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 2s ease, color 2s ease; /* Add transition properties */
+}
+
+button:hover {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    color: white; /* Change text color on hover */
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    .note {
+        font-size: 10px; /* Adjust font size for smaller screens */
+        margin-left: 10%; /* Adjust margin for smaller screens */
+    }
+}

@@ -1,0 +1,18 @@
+<div class="body">
+<h1>This is my notepad</h1>
+<!-- app.component.html -->
+<textarea class="note"  [(ngModel)]="message" cols="80" rows="20"></textarea>
+
+<p align="center">
+  <button (click)="save()">Save</button>
+  <button (click)="clear()">Clear</button>
+  <button (click)="toggleMessages()">{{ buttonText }}</button>
+</p>
+
+<div *ngIf="buttonText==='Hide Messages'">
+  <h2>Saved Messages:</h2>
+  <ul>
+    <li *ngFor="let savedMessage of savedMessages;let i=index">{{ savedMessage }} -{{i}}</li>
+  </ul>
+</div>
+</div>
